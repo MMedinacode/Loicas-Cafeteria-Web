@@ -2,12 +2,12 @@
    LOICA'S CAFETERÍA — datos y lógica
    ============================================================
    ⚠️ SIN PRECIOS A PROPÓSITO. El local no publica carta con precios.
-   Una reseña real menciona un rango de $1.500 a $8.000, pero es la
+   Una reseña menciona un rango de $1.500 a $8.000, pero es la
    apreciación de un cliente, NO una lista oficial: se cita como tal en
    la pestaña Carta y los productos van sin precio.
 
    Los productos listados están CONFIRMADOS por sus fotos de Instagram y
-   por sus reseñas reales de Google. Ninguno inventado. Tienen un PDF de
+   por nuestras reseñas de Google. Ninguno inventado. Tienen un PDF de
    carta en su bio de Instagram — pedirlo para cargarla completa.
    ============================================================ */
 
@@ -16,20 +16,20 @@ const MENU = {
     label: 'Tortas y dulces',
     items: [
       { n:'Red velvet',        d:'Servida en su loza de flores azules', img:'fotos/mesa-redvelvet-matcha.jpg' },
-      { n:'Tortas del día',    d:'"Torta" es de las palabras más repetidas en sus reseñas de Google' },
+      { n:'Tortas del día',    d:'"Torta" es de las palabras más repetidas en nuestras reseñas de Google' },
     ]
   },
   cafeteria: {
     label: 'Café y bebidas',
     items: [
-      { n:'Café',        d:'"El café es perfecto" — de una reseña real del local' },
+      { n:'Café',        d:'"El café es perfecto" — de una reseña del local' },
       { n:'Matcha latte', d:'Con arte en la espuma' },
     ]
   },
   salado: {
     label: 'Para comer',
     items: [
-      { n:'Papas fritas', d:'"Las papas excelentes", dice una de sus reseñas reales' },
+      { n:'Papas fritas', d:'"Las papas excelentes", dice una de nuestras reseñas' },
       { n:'Cocina del día', d:'Sus clientes destacan la comida; consultar qué hay disponible' },
     ]
   }
