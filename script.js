@@ -11,26 +11,105 @@
    carta en su bio de Instagram — pedirlo para cargarla completa.
    ============================================================ */
 
+/* ⚠️ DE DÓNDE SALEN ESTOS PRECIOS, Y LA DUDA QUE QUEDA — 21-09-2026
+   La bio de @loicascafeteria enlaza "Carta Loica's 2025.pdf" en Drive, 8
+   páginas. El PDF trae su texto dentro del árbol de accesibilidad, así que
+   los precios se leyeron COMO TEXTO, no a ojo sobre una foto, y además se
+   revisó página por página en el visor.
+
+   LA DUDA: hay una segunda "Loica's Cafetería" en LITUECHE (San Antonio 1,
+   teléfono 9 4053 4565), y dos directorios (carta.menu, cafeteriass.cl)
+   asocian @loicascafeteria a esa, no a la de Maipú de esta página.
+
+   POR QUÉ SE PUBLICA IGUAL: el horario que ellos mismos declaran en la bio
+   —lunes a jueves de 14:00 a 20:00— calza exacto con la ficha de Google de
+   MAIPÚ (abre 14:00, cierra 20:00). Litueche publica 12:00 a 20:00. Abrir
+   a las dos de la tarde es raro y es el mismo dato. La bio es fuente propia;
+   los directorios son scrapers.
+
+   AUN ASÍ, CONFIRMARLO CON ELLOS antes de dar la carta por buena. Y el PDF
+   se llama "2025": conviene preguntar si los precios siguen vigentes. Las
+   dos preguntas caben en el primer mensaje.
+
+   Helados, Fajitas y Empanadas están en su carta y no se alcanzaron a leer
+   los nombres: quedan fuera antes que inventarlos. */
 const MENU = {
-  dulce: {
-    label: 'Tortas y dulces',
+  cafeteros: {
+    label: 'Cafeteros',
     items: [
-      { n:'Red velvet',        d:'Servida en su loza de flores azules', img:'fotos/mesa-redvelvet-matcha.jpg' },
-      { n:'Tortas del día',    d:'"Torta" es de las palabras más repetidas en nuestras reseñas de Google' },
+      { n:'Espresso',            p:2000 },
+      { n:'Americano',           p:2500 },
+      { n:'Capuccino',           p:3000 },
+      { n:'Capuccino sabor',     p:3500, d:'Consulta por los sabores disponibles' },
+      { n:'Latte',               p:3500, d:'"El café es perfecto", dice una de nuestras reseñas', img:'fotos/mesa-redvelvet-matcha.jpg' },
+      { n:'Latte sabor',         p:3800, d:'Consulta por los sabores disponibles' },
+      { n:'Mocaccino',           p:4000 },
+      { n:'Chocolate caliente',  p:4200 },
+      { n:'Matcha',              p:4000, d:'Con arte en la espuma' },
     ]
   },
-  cafeteria: {
-    label: 'Café y bebidas',
+  frias: {
+    label: 'Bebidas frías',
     items: [
-      { n:'Café',        d:'"El café es perfecto" — de una reseña del local' },
-      { n:'Matcha latte', d:'Con arte en la espuma' },
+      { n:'Affogato',        p:3500 },
+      { n:'Iced Americano',  p:2800 },
+      { n:'Iced Latte',      p:3800 },
+      { n:'Iced Matcha',     p:4300 },
+      { n:'Café helado',     p:4000 },
+      { n:'Frappé',          p:4000 },
+      { n:'Milkshake',       p:4200 },
+    ]
+  },
+  te: {
+    label: 'Té de hojas',
+    items: [
+      { n:'Té individual',              p:1700, d:'Hojas de té de la zona central y del sur de Chile' },
+      { n:'Té helado',                  p:2000 },
+      { n:'Tetera inglesa para dos',    p:2800 },
+      { n:'Tetera inglesa para tres',   p:3800 },
+      { n:'Tetera inglesa para cuatro', p:5000 },
+    ]
+  },
+  refrescos: {
+    label: 'Limonadas y jugos',
+    items: [
+      { n:'Limonada simple',          p:2500 },
+      { n:'Limonada menta jengibre',  p:3000 },
+      { n:"Limonada loica's",         p:3000, d:'La de la casa' },
+      { n:'Limonada blue',            p:2800 },
+      { n:'Jugo natural',             p:2300 },
+      { n:'Batidos',                  p:3200 },
+      { n:'Bebida embotellada',       p:1500 },
+      { n:'Agua mineral',             p:1200 },
+    ]
+  },
+  waffles: {
+    label: 'Waffles y postres',
+    items: [
+      { n:'Waffle con un bocado de helado',  p:4000, d:'Con crema batida y salsa a elección' },
+      { n:'Waffle con dos bocados de helado', p:4500, d:'Con crema batida y salsa a elección' },
+      { n:'Volcán de chocolate',             p:4000, d:'Acompañado de un bocado de helado a elección y crema' },
+    ]
+  },
+  dulce: {
+    label: 'Masitas y tortas',
+    items: [
+      { n:'Tronquitos de chocolate', p:1500 },
+      { n:'Muffin',                  p:1500 },
+      { n:'Brownie',                 p:1500 },
+      { n:'Trencita',                p:1500 },
+      { n:'Donas',                   p:2000 },
+      { n:'Cuchufli',                p:2500 },
+      { n:'Trozo de torta',          p:3700, d:'"Torta" es de las palabras más repetidas en nuestras reseñas' },
+      { n:'Trozo de cheesecake',     p:3700 },
+      { n:'Trozo de pie',            p:3700 },
     ]
   },
   salado: {
     label: 'Para comer',
     items: [
-      { n:'Papas fritas', d:'"Las papas excelentes", dice una de nuestras reseñas' },
-      { n:'Cocina del día', d:'Sus clientes destacan la comida; consultar qué hay disponible' },
+      { n:'Sándwich ave palta', p:3700, d:'Carne de pollo especialmente sazonada y palta hass' },
+      { n:'Hamburguesa casera', p:5500, d:'225 grs de carne de vacuno, con dos ingredientes a elección' },
     ]
   }
 };
@@ -84,10 +163,14 @@ Object.keys(MENU).forEach((key, i) => {
       texto.appendChild(desc);
     }
 
-    // Sin precio publicado: "Consultar", nunca un monto inventado.
+    /* Los precios salen del PDF que ellos mismos enlazan desde su bio de
+       Instagram ("Carta Loica's 2025.pdf"). Si un producto no lo trae,
+       sigue diciendo "Consultar": nunca un monto inventado. */
     const precio = document.createElement('div');
     precio.className = 'price';
-    precio.textContent = 'Consultar';
+    precio.textContent = item.p
+      ? '$' + item.p.toLocaleString('es-CL')
+      : 'Consultar';
 
     row.appendChild(texto);
     row.appendChild(precio);
