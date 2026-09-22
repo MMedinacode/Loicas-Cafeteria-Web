@@ -17,19 +17,14 @@
    los precios se leyeron COMO TEXTO, no a ojo sobre una foto, y además se
    revisó página por página en el visor.
 
-   LA DUDA: hay una segunda "Loica's Cafetería" en LITUECHE (San Antonio 1,
-   teléfono 9 4053 4565), y dos directorios (carta.menu, cafeteriass.cl)
-   asocian @loicascafeteria a esa, no a la de Maipú de esta página.
+   HUBO UNA DUDA, YA RESUELTA (22-09-2026): existe otra "Loica's Cafetería"
+   en Litueche y dos directorios asociaban @loicascafeteria a esa. Su página
+   de Facebook lo zanja: publica "San Cayetano 2687, Maipú" y lleva ESTE
+   mismo logo. Es la de Maipú.
 
-   POR QUÉ SE PUBLICA IGUAL: el horario que ellos mismos declaran en la bio
-   —lunes a jueves de 14:00 a 20:00— calza exacto con la ficha de Google de
-   MAIPÚ (abre 14:00, cierra 20:00). Litueche publica 12:00 a 20:00. Abrir
-   a las dos de la tarde es raro y es el mismo dato. La bio es fuente propia;
-   los directorios son scrapers.
-
-   AUN ASÍ, CONFIRMARLO CON ELLOS antes de dar la carta por buena. Y el PDF
-   se llama "2025": conviene preguntar si los precios siguen vigentes. Las
-   dos preguntas caben en el primer mensaje.
+   LO QUE SÍ QUEDA POR PREGUNTAR: el PDF se llama "2025" y estamos en
+   septiembre de 2026. Conviene confirmar que los precios siguen vigentes, y
+   esa pregunta cabe perfecta en el primer mensaje.
 
    Helados, Fajitas y Empanadas están en su carta y no se alcanzaron a leer
    los nombres: quedan fuera antes que inventarlos. */

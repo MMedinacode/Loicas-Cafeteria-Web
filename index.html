@@ -60,8 +60,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
-<link rel="stylesheet" href="pulido.css">
+<link rel="stylesheet" href="styles.css?v=22092026">
+<link rel="stylesheet" href="pulido.css?v=22092026">
 
 <!-- ══════════════════════════════════════════════════════════════
      Datos estructurados (schema.org)
@@ -153,12 +153,12 @@
 <header class="site-header">
   <div class="header-inner">
     <button class="brand" data-tab="inicio">
-      <span class="brand-ico" aria-hidden="true">
-        <svg viewBox="0 0 64 64" width="24" height="24">
-          <path d="M40 14a9 9 0 1 0-9 9c-8 2-14 9-14 17 0 6 5 10 11 10h6c9 0 16-7 16-16 0-8-4-15-10-20z" fill="currentColor"/>
-        </svg>
-      </span>
-      <span class="brand-name">Loica's</span>
+      <!-- Su logo real, de su propio Instagram. Es un logotipo de palabra:
+           ya dice el nombre, así que sustituye al icono Y al texto de al
+           lado. El damasco del fondo se quitó por luminancia — el granate
+           del texto es lo único oscuro de la imagen. -->
+      <img class="brand-logo" src="fotos/loicas-logo.png" alt="Loica's Cafetería"
+           width="586" height="300" decoding="async">
     </button>
 
     <nav class="nav-links" id="navLinks" aria-label="Navegación principal">
@@ -448,7 +448,17 @@
 <script>window.HORARIO={dias:["14:00 - 20:00","14:00 - 20:00","14:00 - 20:00","14:00 - 20:00","14:00 - 21:00","14:00 - 21:00","14:00 - 21:00"],fuente:"Google Maps, 11-09-2026"};</script>
 <script src="horario.js"></script>
 <!-- Redes sociales REALES del local, verificadas una por una. El modulo redes.js arma con esto la pestana Redes. -->
-<script>window.REDES={"intro": "En la bio de su Instagram tienen un PDF con la carta completa.", "instagram": {"user": "loicascafeteria", "fotos": ["fotos/mesa-redvelvet-matcha.jpg", "fotos/producto1.jpg", "fotos/producto3.jpg"]}, "telefono": {"numero": "+56934377332"},
+<script>window.REDES={
+  intro: "Todos nuestros canales, en un solo lugar.",
+  instagram: { user: "loicascafeteria", seguidores: "1.930",
+               fotos: ["fotos/mesa-redvelvet-matcha.jpg", "fotos/producto1.jpg", "fotos/producto3.jpg"] },
+  facebook: { url: "https://www.facebook.com/p/Loicas-cafeter%C3%ADa-100026943405869/",
+              nombre: "Loica's cafetería", nota: "1 mil seguidores · recomendada por el 96%." },
+  /* El teléfono es el de la ficha de Google. Su Facebook publica OTRO
+     (9 4502 6880); cuando hay dos, manda el de Google — criterio del
+     proyecto. El segundo queda anotado acá por si el primero falla. */
+  telefono: { numero: "+56934377332" },
+  correo: { direccion: "loicascafeteria1@gmail.com" },
   /* Ficha de Google. El cid sale del place id hexadecimal que esta
      misma página ya guarda en su enlace de reseñas. */
   google: {
